@@ -1,0 +1,140 @@
+/* Styles globaux */
+.body {
+    font-family: 'Rajdhani', 'Barlow'Arial, sans-serif;
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Barre de navigation */
+
+/* Bannière principale (carrousel Bootstrap) */
+#bannerCarousel {
+    background-color: #F2F2F2;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 20px 20px;
+    /* Coins inférieurs arrondis */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border: 1px solid;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.533);
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-brand img {
+    width: 50px;
+    /* Largeur du logo */
+}
+
+.navbar-nav .nav-link {
+    color: #1c1b1b; /* Changez la couleur selon vos préférences (par exemple, #333 pour une couleur grise foncée) */
+    font-size: 16px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #F2F2F2;
+}
+
+/* Carrousel d'images */
+#bannerCarousel {
+    /*opacity: 0.8;*/
+    z-index: 0;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    font-weight: bold;
+}
+
+/* Médias queries pour la réactivité */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 100px 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 28px;
+    }
+
+    .jumbotron p {
+        font-size: 18px;
+    }
+}
+
+/* Sections */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+/* Section Contact */
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #D92332;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #D92332;
+    color: #F2F2F2;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Médias queries pour la réactivité */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 100px 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 28px;
+    }
+
+    .jumbotron p {
+        font-size: 18px;
+    }
+}
