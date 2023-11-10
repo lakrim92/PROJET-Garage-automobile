@@ -56,7 +56,7 @@ body {
 
 /* Styles pour le bouton hamburger */
 .navbar-toggler-icon {
-    background-color: #F2F2F2; /* Couleur de l'icône hamburger */
+    background-color: #f2f2f200; /* Couleur de l'icône hamburger */
 }
 
 .navbar-toggler {
