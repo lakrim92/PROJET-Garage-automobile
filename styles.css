@@ -1,6 +1,6 @@
 /* Styles globaux */
-.body {
-    font-family: 'Rajdhani', 'Barlow'Arial, sans-serif;
+body {
+    font-family: 'Rajdhani', 'Barlow', Arial, sans-serif;
     background-color: #F2F2F2;
     margin: 0;
     padding: 0;
@@ -12,23 +12,15 @@
 }
 
 /* Barre de navigation */
-
-/* Bannière principale (carrousel Bootstrap) */
-#bannerCarousel {
-    background-color: #F2F2F2;
-}
-
-/* Barre de navigation */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 0 0 20px 20px;
-    /* Coins inférieurs arrondis */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 0px 0px 30px 30px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
-    border: 1px solid;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.533);
+    z-index: 1; /* Assurez-vous que la barre de navigation est au premier plan */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour la profondeur */
 }
 
 .navbar .navbar-brand {
@@ -37,53 +29,70 @@
 }
 
 .navbar .navbar-brand img {
-    width: 50px;
-    /* Largeur du logo */
+    width: 50px; /* Largeur du logo */
+}
+
+.navbar-brand {
+    color: #D92332;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-link {
-    color: #1c1b1b; /* Changez la couleur selon vos préférences (par exemple, #333 pour une couleur grise foncée) */
+    color: #1c1b1b; /* Couleur du texte des liens */
     font-size: 16px;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.7);
+.navbar-nav .nav-link:hover {
+    color: #1c1b1b; /* Couleur du texte des liens au survol */
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* La barre de navigation doit être au-dessus du contenu */
+}
+
+/* Styles pour le bouton hamburger */
+.navbar-toggler-icon {
+    background-color: #F2F2F2; /* Couleur de l'icône hamburger */
+}
+
+.navbar-toggler {
+    border: none; /* Supprime la bordure du bouton hamburger */
+}
+
+/* Changement de couleur du bouton hamburger au survol */
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #1c1b1b76;
     border-radius: 10px;
-    color: #F2F2F2;
 }
 
 /* Carrousel d'images */
 #bannerCarousel {
-    /*opacity: 0.8;*/
+    background-color: #F2F2F2;
     z-index: 0;
 }
 
-.carousel-caption h1,
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.439);
+    border-radius: 10px;
+    color: #F2F2F2;
+}
+
+.carousel-caption h5,
 .carousel-caption p {
     font-weight: bold;
 }
 
-/* Médias queries pour la réactivité */
-@media (max-width: 768px) {
-    .jumbotron {
-        padding: 100px 0;
-    }
-
-    .jumbotron h1 {
-        font-size: 28px;
-    }
-
-    .jumbotron p {
-        font-size: 18px;
-    }
+.carousel-indicators {
+    z-index: 1; /* Assurez-vous que les indicateurs sont au-dessus du carrousel */
 }
 
-/* Sections */
-.section-title {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 40px;
+/* Section Véhicules d'Occasion */
+#vehicles {
+    padding-top: 50px; /* Ajustement de l'espacement en haut de la section */
 }
 
 .card {
@@ -105,6 +114,10 @@
 }
 
 /* Section Contact */
+#contact {
+    padding-top: 50px; /* Ajustement de l'espacement en haut de la section */
+}
+
 .form-group label {
     font-weight: bold;
 }
@@ -126,6 +139,10 @@
 
 /* Médias queries pour la réactivité */
 @media (max-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+
     .jumbotron {
         padding: 100px 0;
     }
