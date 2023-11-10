@@ -41,10 +41,12 @@ body {
 .navbar-nav .nav-link {
     color: #1c1b1b; /* Couleur du texte des liens */
     font-size: 16px;
+    text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover {
     color: #1c1b1b; /* Couleur du texte des liens au survol */
+    text-decoration: underline;
 }
 
 .fixed-top {
@@ -79,6 +81,7 @@ body {
     background-color: rgba(0, 0, 0, 0.439);
     border-radius: 10px;
     color: #F2F2F2;
+    margin-bottom: 10px;
 }
 
 .carousel-caption h5,
@@ -88,7 +91,75 @@ body {
 
 .carousel-indicators {
     z-index: 1; /* Assurez-vous que les indicateurs sont au-dessus du carrousel */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    background-color: #f8f4f4; /* Couleur par défaut des indicateurs */
+    opacity: 0.5; /* Opacité par défaut des indicateurs */
+}
+
+.carousel-indicators button.active {
+    background-color: #D92332; /* Couleur de fond de l'indicateur actif */
+    opacity: 1; /* Opacité de l'indicateur actif */
+}
+
+/* Styles pour la Section Services */
+
+.item-wrapper {
+    zoom: 1;
+}
+
+.item-wrapper {
+    transform: scale(1);
+    transform-origin: 0 0;
+}
+
+
+#services {
+    background-color: #FFFFFF;
+    padding-top: 50px; /* Ajustement de l'espacement en haut de la section */
+}
+
+#services h2 {
+    color: #D92332;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-carousel {
+    margin-top: 30px; /* Ajouter un espace en haut du carousel */
+}
+
+.service-card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner du volume aux cards */
+    transition: transform 0.3s;
+    margin: 0 10px;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.service-card-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 
 /* Section Véhicules d'Occasion */
 #vehicles {
@@ -97,11 +168,12 @@ body {
 
 .card {
     border: none;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card-title {

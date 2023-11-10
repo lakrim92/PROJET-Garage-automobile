@@ -1,21 +1,27 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garage V. Parrot</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
-    <!--<link rel="stylesheet" href="styles.css">-->
-<!--</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Votre propre fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-    <header>-->
+    <header>
         <!-- Barre de navigation -->
-        <!--<nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/image.15U1C2.png" alt="Logo Garage V. Parrot">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,10 +38,9 @@
                     </ul>
                 </div>
             </div>
-        </nav>-->
-
+        </nav>
         <!-- Carrousel d'images -->
-        <!--<div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+        <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-target="#bannerCarousel" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-target="#bannerCarousel" data-slide-to="1" aria-label="Slide 2"></button>
@@ -43,7 +48,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/istockphoto-1473771646-1024x1024.jpg" class="d-block w-100" alt="image-1">
+                    <img src="images/alex-suprun-AHnhdjyTNGM-unsplash.jpg" class="d-block w-100" alt="image-1">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
@@ -75,7 +80,81 @@
         </div>
     </header>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Section Services -->
+<section id="services" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center">Nos Services</h2>
+        <div class="owl-carousel services-carousel owl-theme">
+            <!-- Service 1: Garage -->
+            <div class="item">
+                <a href="garage.php" data-title="Garage" data-description="garage.php" target="_self">
+                    <div class="item-wrapper">
+                        <div class="item-image service-image">
+                            <div class="image owl-lazy" data-bg="/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg" data-title="Garage" data-description="garage.php" data-url="" style="background-image: url('/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg'); opacity: 1;"></div>
+                        </div>
+                        <div class="item-caption">
+                            <span class="title">Garage</span>
+                            <span class="description">garage.php</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Service 2: Réparation automobile -->
+            <div class="item">
+                <a href="reparation-automobile.php" data-title="Réparation automobile" data-description="reparation-automobile.php" target="_self">
+                    <div class="item-wrapper">
+                        <div class="item-image service-image">
+                            <div class="image owl-lazy" data-bg="/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg" data-src="/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg" data-title="Réparation automobile" data-description="reparation-automobile.php" data-url="" style="background-image: url('/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg'); opacity: 1;"></div>
+                        </div>
+                        <div class="item-caption">
+                            <span class="title">Réparation automobile</span>
+                            <span class="description">reparation-automobile.php</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Service 3: Vente de voitures d'occasion -->
+            <div class="item">
+                <a href="vente-voitures-occasion.php" data-title="Vente de voitures d'occasion" data-description="vente-voitures-occasion.php" target="_self">
+                    <div class="item-wrapper">
+                        <div class="item-image service">
+                            <div class="image owl-lazy" data-bg="/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg" data-src="/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg" data-title="Vente de voitures d'occasion" data-description="vente-voitures-occasion.php" data-url="" style="background-image: url('/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg'); opacity: 1;"></div>
+                        </div>
+                        <div class="item-caption">
+                            <span class="title">Vente de voitures d'occasion</span>
+                            <span class="description">vente-voitures-occasion.php</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Service 4: Entretien de Véhicules -->
+            <div class="item">
+                <a href="entretien-vehicules.php" data-title="Entretien de Véhicules" data-description="entretien-vehicules.php" target="_self">
+                    <div class="item-wrapper">
+                        <div class="item-image service">
+                            <div class="image owl-lazy" data-bg="/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg" data-src="/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg" data-title="Entretien de Véhicules" data-description="entretien-vehicules.php" data-url="" style="background-image: url('/images/alex-suprun-AHnhdjyTNGM-unsplash.jpg'); opacity: 1;"></div>
+                        </div>
+                        <div class="item-caption">
+                            <span class="title">Entretien de Véhicules</span>
+                            <span class="description">entretien-vehicules.php</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Votre script.js -->
+<script src="script.js"></script>
 </body>
-</html>-->
+</html>
